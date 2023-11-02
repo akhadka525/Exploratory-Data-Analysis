@@ -46,8 +46,8 @@ NEI_Baltimore <- NEI %>%
         filter(fips == 24510)
 
 
-## To get the motor vehicle related emissions in Baltimore city first select coal 
-## combustion related fields from SCC Data and subset NEI_Baltimore data based on the selected field in SCC 
+## To get the motor vehicle related emissions in Baltimore city first select vehicle related 
+## fields from SCC Data and subset NEI_Baltimore data based on the selected field in SCC 
 
 vehicle_SCC <- SCC[grep("Vehicles", SCC$Short.Name), ]
 
